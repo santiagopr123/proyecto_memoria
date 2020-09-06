@@ -41,11 +41,11 @@
 durante mucho tiempo se ha pensado que programar es mucho mas que  escribir codigo, en gran parte no deberia ser asi,ni mucho menos pensado.en la programacion para programar en un buen sentido de la palabra se debe de tener aspectos tales como la comprension y calidad del algoritmo que vamos a implementar,tener diferentes capacidades de comunicacion 
 y formas de trabajar en equipo,asi como tener la disciplina y el empeño para realizar los diferentes trabajos asignados .Pero algo que es de sumamente importancia.
 No solo al programar sino tambien en cualquier otro trabajo en el mundo el cual es conocer la herramien de trabajo y como lo que haremos influir en los dintintos 
-tipos de dispositivos, a continuacion mostraremos aspectos muy importantes sobre la memoria, algo mas alla de guardar.
+tipos de dispositivos, a continuacion mostraremos aspectos muy importantes sobre la memoria, algo mas alla de guardar.\cite{profe}
 
 \section{Sección de contenido} \label{contenido}
     \subsection{Qué es la memoria de un computador?}
-    Podemos definir la memoria en un contexto general, podriamos decir que es el proceso por el cual la memoria tiene capacidad mental que posibilita a un sujeto registrar, conservar y evocar las experiencias\cite{hipocampo}, y si volvemos a leer de nuevo, podemos plantear que esta idea no se aleja mucho de la logica con la cual es programado un computador, aunque sin apegarnos a esto y ademas profundizando, la memoria en el computador tiene un proceso complejo y que para algunos tiene una ventaja sobre los humanos, alguna de estas como la velocidad, rapidez y eficiencia.
+    Podemos definir la memoria en un contexto general, podriamos decir que es el proceso por el cual la memoria tiene capacidad mental que posibilita a un sujeto registrar, conservar y evocar las experiencias\cite{hipocampo}, y si volvemos a leer de nuevo, podemos plantear que esta idea no se aleja mucho de la logica con la cual es programado un computador, aunque sin apegarnos a esto y ademas profundizando, la memoria en el computador tiene un proceso complejo y que para algunos tiene una ventaja sobre los humanos, alguna de estas como la velocidad, rapidez y eficiencia.\cite{profe}
     
     asi, la memoria en el computador cumple un papel fundamental para el buen funcionamiento del mismo  ya que se trata del dispositivo donde se almacena temporalmente toda la información con la que trabajan los microprocesadores para procesarla y devolver los resultados que los usuarios que la requieren.
 
@@ -92,11 +92,14 @@ tipos de dispositivos, a continuacion mostraremos aspectos muy importantes sobre
     \subsection{¿Como se gestiona la memoria en un computador?}
     La memoria se gestiona mediante algunos pasos, que podrian organizarce de la siguiente manera:
     
-        \subsubsection{Reasignacion} : El proceso empieza mediante la orden del usuario, que temporalmente quedara en un espacio en la memoria.
+        \subsubsection{Reasignacion} : El proceso empieza mediante la orden del usuario, que temporalmente quedara en un espacio en la memoria.\cite{wikipedia}
+        
+        \subsubsection{proteccion} Los procesos no pueden distinguir entre los procesos de memoria y otros tipos de procesos que no tienen permisos, para esto existe la proteccion de la memoria que evita el codigo malicioso que pueda interferir en los procesos, tambien es otro metodo para controlar el uso de memoria de una PC  y cuenta con diferentes metodos como los son(segmentacion,paginas,llaves de proteccion, segmentacion simulada y direccionamiento basado en la capacidad.)\cite{wiki}
+        
     
         \subsubsection{administrador de memoria}: El microprocesador buscara la orden y la ejecutara, seguido la orden se eliminara del procesador y ademas del espacio de memoria.
     
-        \subsubsection{Tecnicas de administracion de memorias(asignacion contigua)}   Ya hecho lo anterior el procesador manda una orden al controlador el cual esta ubicado en la motherboard o tarjeta madre.El controlador toma el programa o la orden del disco duro y la desplaza hacia un espacio de memoria para trabajar sobre él.Ya que no hay tanta capacidad de informacion el microprocesador trabaja con la memoria, a tal caso trabaja por porciones del programa, asi llevando y trayendo del procesador hacia la memoria,ahora se da la orden de traer un documento compatible para trabajar con el programa(mismos pasos explicados anteriormente )  y carga en un espacio de memoria.El microprocesador se da cuenta de que hay una instruccion en un espacio de la memoria, la busca, la coge y la procesa, elimina el espacio en memoria ya que es innecesario y nuevamente le da una instruccion al controlador para que tome el archivo y lo ponga en un espacio vacio de la memoria.
+        \subsubsection{Tecnicas de administracion de memorias(asignacion contigua)}   Ya hecho lo anterior el procesador manda una orden al controlador el cual esta ubicado en la motherboard o tarjeta madre.El controlador toma el programa o la orden del disco duro y la desplaza hacia un espacio de memoria para trabajar sobre él.Ya que no hay tanta capacidad de informacion el microprocesador trabaja con la memoria, a tal caso trabaja por porciones del programa, asi llevando y trayendo del procesador hacia la memoria,ahora se da la orden de traer un documento compatible para trabajar con el programa(mismos pasos explicados anteriormente )  y carga en un espacio de memoria.El microprocesador se da cuenta de que hay una instruccion en un espacio de la memoria, la busca, la coge y la procesa, elimina el espacio en memoria ya que es innecesario y nuevamente le da una instruccion al controlador para que tome el archivo y lo ponga en un espacio vacio de la memoria.\cite{profe}
         
         Llegados a este punto el micropocesador utiliza los recursos del programa para trabajar sobre el documento, al querer guardar el documento el usuario mediante el mouse manda una instruccion hacia la memoria, acto seguido el microprocesador resive la instruccion y se dara la tarea de ir,tomarla ,leerla y eliminar la instruccion del espacio de memoria,despues se envia  una orden al controlador(guardar el documento en el cual trabajamos, sobreescribirlo en el disco duro con el mismo nombre); ya hecho el trabajo el usuario dara la orden de cerrar el programa que llegara al controlador de la motherboard y viajara por el bus de datos( la información, instrucciones y datos viajan de un dispositivo a otro por el bus de datos,circuitos impresos de cobre que se ven sobre la placa madre o
         motherboard si se abre el computador.)hasta llegar  a la memoria del computador.
@@ -109,7 +112,7 @@ tipos de dispositivos, a continuacion mostraremos aspectos muy importantes sobre
     
     
     \subsection{Qué hace que una memoria sea más rápida que otra y porque esto es importante?}
-    
+    Cuando hablamos de rapidez tendemos a igualarla con la velocidad, terminos que parecen ser iguales pero que en realidad tienen ciertas diferenciaciones. Asi mismo la rapidez una memoria podria decirse que se compone de la latencia(eficiencia) y la frecuencia(velocidad).
 
 
 \begin{lstlisting}
