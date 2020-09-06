@@ -97,23 +97,34 @@ No solo al programar sino tambien en cualquier otro trabajo en el mundo el cual 
     \subsection{¿Como se gestiona la memoria en un computador?}
     La memoria se gestiona mediante algunos pasos, que podrian organizarce de la siguiente manera:
     
-        \subsubsection{Reasignacion} : El proceso empieza mediante la orden del usuario, que temporalmente quedara en un espacio en la memoria.\cite{wikipedia}
+        \subsubsection{Reasignacion} El proceso empieza mediante la orden del usuario, que temporalmente quedara en un espacio en la memoria.\cite{wikipedia}
         
         \subsubsection{proteccion} Los procesos no pueden distinguir entre los procesos de memoria y otros tipos de procesos que no tienen permisos, para esto existe la proteccion de la memoria que evita el codigo malicioso que pueda interferir en los procesos, tambien es otro metodo para controlar el uso de memoria de una PC  y cuenta con diferentes metodos como los son(segmentacion,paginas,llaves de proteccion, segmentacion simulada y direccionamiento basado en la capacidad.)\cite{wiki}
         
     
-        \subsubsection{administrador de memoria}: El microprocesador buscara la orden y la ejecutara, seguido la orden se eliminara del procesador y ademas del espacio de memoria.
+        \subsubsection{administrador de memoria}El microprocesador buscara la orden y la ejecutara, seguido la orden se eliminara del procesador y ademas del espacio de memoria.
     
         \subsubsection{Tecnicas de administracion de memorias(asignacion contigua)}   Ya hecho lo anterior el procesador manda una orden al controlador el cual esta ubicado en la motherboard o tarjeta madre.El controlador toma el programa o la orden del disco duro y la desplaza hacia un espacio de memoria para trabajar sobre él.Ya que no hay tanta capacidad de informacion el microprocesador trabaja con la memoria, a tal caso trabaja por porciones del programa, asi llevando y trayendo del procesador hacia la memoria,ahora se da la orden de traer un documento compatible para trabajar con el programa(mismos pasos explicados anteriormente )  y carga en un espacio de memoria.El microprocesador se da cuenta de que hay una instruccion en un espacio de la memoria, la busca, la coge y la procesa, elimina el espacio en memoria ya que es innecesario y nuevamente le da una instruccion al controlador para que tome el archivo y lo ponga en un espacio vacio de la memoria.\cite{profe}
         
         Llegados a este punto el micropocesador utiliza los recursos del programa para trabajar sobre el documento, al querer guardar el documento el usuario mediante el mouse manda una instruccion hacia la memoria, acto seguido el microprocesador resive la instruccion y se dara la tarea de ir,tomarla ,leerla y eliminar la instruccion del espacio de memoria,despues se envia  una orden al controlador(guardar el documento en el cual trabajamos, sobreescribirlo en el disco duro con el mismo nombre); ya hecho el trabajo el usuario dara la orden de cerrar el programa que llegara al controlador de la motherboard y viajara por el bus de datos( la información, instrucciones y datos viajan de un dispositivo a otro por el bus de datos,circuitos impresos de cobre que se ven sobre la placa madre o
-        motherboard si se abre el computador.)hasta llegar  a la memoria del computador.
+        motherboard si se abre el computador.)hasta llegar  a la memoria del computador.\cite{profe}
         
         \subsubsection{Ordenes finales} Ahora el microprocesador da  un aviso de orden, la pasa a buscar, leer y procesar(lo cual no es mas que quitar tanto el documento como el programa del espacio de memoria en el cual estaban.)
         
 
     \subsection{Qué hace que una memoria sea más rápida que otra y porque esto es importante?}
-    Cuando hablamos de rapidez tendemos a igualarla con la velocidad, terminos que parecen ser iguales pero que en realidad tienen ciertas diferenciaciones. Asi mismo la rapidez una memoria podria decirse que se compone de la latencia(eficiencia) y la frecuencia(velocidad).
+    
+    Cuando hablamos de rapidez tendemos a igualarla con la velocidad, terminos que parecen ser iguales pero que en realidad tienen ciertas diferenciaciones. Asi mismo la rapidez una memoria podria decirse que se compone de la latencia(eficiencia) y la frecuencia(velocidad).Pero en un campo mas amplio que significa cada uno de ellas?
+    
+    \subsubsection{Latencia} La latencia es el tiempo que transcurre en tre una peticion y respuesta,para profundizar mas La latencia CAS mide el número de ciclos de reloj que pasan desde que se realiza una petición para leer un dato hasta que dicha información está disponible.Pero enrealidad el tiempo de latencia no sera el total que se calcule ya que entra algo que influye mucho que reduce el tiempo en que se hace un ciclo que es la frecuencia.\cite{profesional}
+    
+    \subsubsection{Frecuencia} Es la que indica la velocida a la que trabaja la memoria,mas aun el numero de frecuencia indica cuantos datos puede manejar por segundo, entonces mientras mas ciclos sobre segundos mas cantidad de datos se podra almacenar y leer, asi beneficiando al usuario ya que sera todo mas fluido(una memoria RAM tiene 3200 MHz, por ende esta ejecutará 3.200 millones de ciclos por segundo).
+    
+    En conclucion una memoria es mas rapida que otra gracias a una adecuada latencia y una buena frecuencia, importante en todos los casos ya que nos dara eficiencia, fluidez y un desarrollo optimo.
+
+Publicado en: https://www.profesionalreview.com/2018/07/21/latencia-memoria-ram/
+    
+    
 
 
 \begin{lstlisting}
