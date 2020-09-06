@@ -74,13 +74,13 @@ tipos de dispositivos, a continuacion mostraremos aspectos muy importantes sobre
         \subsubsection{La memoria RAM}
         La memoria RAM es el tipo de memoria mas importante que tiene el computador,en este tipo de memoria se puede acceder desde cualquier espacio , mo importa si dirreccion o la posicion. Las siglas RAM significan ( Random Access Memory o memoria de acceso aleatorio),es un gran componente y a medida que el computadoras tengan mas memoria RAM(Acequible en algunos casos)este no dependera tanto de la memoria virtual.
         
-        -Tipos de memoria RAM:
+        --Tipos de memoria RAM:
             
-            DRAM(dynamic RAM): Por su traduccion al español RAM dinamica , es un tipo de memoria que envia señales llamadas RAS(señal de direccion de fila)hacia la fila donde se encuentran las celdas cuyo transistores se van a activar y permitir  pasar los electrones hacia los capacitores de las celdas, seguidamente se envian otro tipo de señales llamadas CAS(señales de direccion de columna) las cuales  rellenan con electrones los capacitores de las celdas que representan los bits 1.
+            -DRAM(dynamic RAM): Por su traduccion al español RAM dinamica , es un tipo de memoria que envia señales llamadas RAS(señal de direccion de fila)hacia la fila donde se encuentran las celdas cuyo transistores se van a activar y permitir  pasar los electrones hacia los capacitores de las celdas, seguidamente se envian otro tipo de señales llamadas CAS(señales de direccion de columna) las cuales  rellenan con electrones los capacitores de las celdas que representan los bits 1.
             
-            SRAM (static RAM) : por su traduccion al español RAM estatica, en este "nuevo" tipo de memoria es diferente al tipo DRAM, esta compuesta por cuatro transistores y algunos circuitos, y gracias a esto permite ser mucho mas rapida que la memoria DRAM, aunque al ser mucho mas grande esto hara que tenga menor cantidad de celdas y asi menor capacidad de bits de almacenamiento.
+            -SRAM (static RAM) : por su traduccion al español RAM estatica, en este "nuevo" tipo de memoria es diferente al tipo DRAM, esta compuesta por cuatro transistores y algunos circuitos, y gracias a esto permite ser mucho mas rapida que la memoria DRAM, aunque al ser mucho mas grande esto hara que tenga menor cantidad de celdas y asi menor capacidad de bits de almacenamiento.
             
-            SDRAM (Synchronous Dynamic RAM) : la RAM dinamica sincronica,funciona en sincronia con el microprocesador ,lo que significa que espera a la señal de reloj antes de responder,asi aceptando una orden de lectura antes  de haber procesado una orden de escritura(trabajar en paralelo).\cite{hardzone}
+            -SDRAM (Synchronous Dynamic RAM) : la RAM dinamica sincronica,funciona en sincronia con el microprocesador ,lo que significa que espera a la señal de reloj antes de responder,asi aceptando una orden de lectura antes  de haber procesado una orden de escritura(trabajar en paralelo).\cite{hardzone}
             
         \subsubsection{La memoria virtual}
         La memoria virtual es una porcion del disco duro destinada a sostener temporalmente trozo de programas y datos que estan en ejecucion y utilizan espacio innecesario(si hay muy poca memoria RAM y a su vez el computador esta consumiendo mucha puede ocurrir la hiperpaginacion volviendolo muy lento).
@@ -89,7 +89,24 @@ tipos de dispositivos, a continuacion mostraremos aspectos muy importantes sobre
         El disco duro es el tipo de memoria que guarda datos a largo plazo y ademas no se borran al apagar el PC, es el responsable de guardar el codigo del sistema operativo y los programas que dia a dia utilizamos,como parte esencial se debe de tener en cuenta que cada tipo de disco duro tiene su espacio y consumido en parte por el sistema operativo e instalaciones de respaldo.\cite{digitaltrends}
         
         
-    \subsection{¿Como se debe de gestionar una memoria en un computador?}
+    \subsection{¿Como se gestiona la memoria en un computador?}
+    La memoria se gestiona mediante algunos pasos, que podrian organizarce de la siguiente manera:
+    
+        \subsubsection{Reasignacion} : El proceso empieza mediante la orden del usuario, que temporalmente quedara en un espacio en la memoria.
+    
+        \subsubsection{administrador de memoria}: El microprocesador buscara la orden y la ejecutara, seguido la orden se eliminara del procesador y ademas del espacio de memoria.
+    
+        \subsubsection{Tecnicas de administracion de memorias(asignacion contigua)}   Ya hecho lo anterior el procesador manda una orden al controlador el cual esta ubicado en la motherboard o tarjeta madre.El controlador toma el programa o la orden del disco duro y la desplaza hacia un espacio de memoria para trabajar sobre él.Ya que no hay tanta capacidad de informacion el microprocesador trabaja con la memoria, a tal caso trabaja por porciones del programa, asi llevando y trayendo del procesador hacia la memoria,ahora se da la orden de traer un documento compatible para trabajar con el programa(mismos pasos explicados anteriormente )  y carga en un espacio de memoria.El microprocesador se da cuenta de que hay una instruccion en un espacio de la memoria, la busca, la coge y la procesa, elimina el espacio en memoria ya que es innecesario y nuevamente le da una instruccion al controlador para que tome el archivo y lo ponga en un espacio vacio de la memoria.
+        
+        Llegados a este punto el micropocesador utiliza los recursos del programa para trabajar sobre el documento, al querer guardar el documento el usuario mediante el mouse manda una instruccion hacia la memoria, acto seguido el microprocesador resive la instruccion y se dara la tarea de ir,tomarla ,leerla y eliminar la instruccion del espacio de memoria,despues se envia  una orden al controlador(guardar el documento en el cual trabajamos, sobreescribirlo en el disco duro con el mismo nombre); ya hecho el trabajo el usuario dara la orden de cerrar el programa que llegara al controlador de la motherboard y viajara por el bus de datos( la información, instrucciones y datos viajan de un dispositivo a otro por el bus de datos,circuitos impresos de cobre que se ven sobre la placa madre o
+        motherboard si se abre el computador.)hasta llegar  a la memoria del computador.
+        
+        \subsubsection{Ordenes finales} Ahora el microprocesador da  un aviso de orden, la pasa a buscar, leer y procesar(lo cual no es mas que quitar tanto el documento como el programa del espacio de memoria en el cual estaban.)
+        
+    
+    
+    
+    
     
     \subsection{Qué hace que una memoria sea más rápida que otra y porque esto es importante?}
     
