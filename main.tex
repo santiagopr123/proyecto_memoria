@@ -40,14 +40,14 @@
 \section{Introduccion}
 durante mucho tiempo se ha pensado que programar es mucho mas que  escribir codigo, en gran parte no deberia ser asi,ni mucho menos pensado.en la programacion para programar en un buen sentido de la palabra se debe de tener aspectos tales como la comprension y calidad del algoritmo que vamos a implementar,tener diferentes capacidades de comunicacion 
 y formas de trabajar en equipo,asi como tener la disciplina y el empeño para realizar los diferentes trabajos asignados .Pero algo que es de sumamente importancia.
-No solo al programar sino tambien en cualquier otro trabajo en el mundo el cual es conocer la herramien de trabajo y como lo que haremos influir en los dintintos 
-tipos de dispositivos, a continuacion mostraremos aspectos muy importantes sobre la memoria, algo mas alla de guardar.\cite{profe}
+No solo al programar sino tambien en cualquier otro trabajo en el mundo el cual es conocer la herramien de trabajo y como lo que haremos influir en los dintintos tipos de dispositivos, a continuacion mostraremos aspectos muy importantes sobre la memoria, algo mas alla de guardar.
 
 \section{Sección de contenido} \label{contenido}
     \subsection{Qué es la memoria de un computador?}
-    Podemos definir la memoria en un contexto general, podriamos decir que es el proceso por el cual la memoria tiene capacidad mental que posibilita a un sujeto registrar, conservar y evocar las experiencias\cite{hipocampo}, y si volvemos a leer de nuevo, podemos plantear que esta idea no se aleja mucho de la logica con la cual es programado un computador, aunque sin apegarnos a esto y ademas profundizando, la memoria en el computador tiene un proceso complejo y que para algunos tiene una ventaja sobre los humanos, alguna de estas como la velocidad, rapidez y eficiencia.\cite{profe}
+    Podemos definir la memoria en un contexto general, podriamos decir que es el proceso por el cual la memoria tiene capacidad mental que posibilita a un sujeto registrar, conservar y evocar las experiencias\cite{hipocampo}, y si volvemos a leer de nuevo, podemos plantear que esta idea no se aleja mucho de la logica con la cual es programado un computador, aunque sin apegarnos a esto y ademas profundizando, la memoria en el computador tiene un proceso complejo y que para algunos tiene una ventaja sobre los humanos, alguna de estas como la velocidad, rapidez y eficiencia.
     
-    asi, la memoria en el computador cumple un papel fundamental para el buen funcionamiento del mismo  ya que se trata del dispositivo donde se almacena temporalmente toda la información con la que trabajan los microprocesadores para procesarla y devolver los resultados que los usuarios que la requieren.
+    Asi, la memoria en el computador cumple un papel fundamental para el buen funcionamiento del mismo.y aunque conceptualmente la memoria parezca sencilla,enrealidad presenta la mas amplia diversidad de arquitecturas, gamas y prestaciones\cite{academia}.
+    Pero en contexto se puede decir que la memoria es la "parte" del computador que almacena la informacion que este maneja(datos y los programas para la ejecucion de estos procesada por los microprocesadores para la tareas asignadas por el usuario).\cite{academia}
 
     \begin{figure}[h]
     \includegraphics[width=6 cm]{imagenes/tipo_memoria.jpg}
@@ -63,13 +63,18 @@ tipos de dispositivos, a continuacion mostraremos aspectos muy importantes sobre
     miles de millones de bytes por segundo, por este motivo deben de tener dispositivos de almacenamiento temporal por que puedan seguir el trabajo ya que si no fuera asi se tendria que parar para cada informacion que llegue.
     
         \subsubsection{memoria cache}
-        Un tipo de memoria muy rapida. Que se utiliza cada vez que el microprocesador detecta ciertos datos o segmentos de informacion usada de forma reiterativa, toma una copia de la memoria RAM y la carga en la memoria cache. Para este tipo podemos encontrar tres niveles, los cuales son:
+        la memoria cache es una memoria auxiliar, de gran velocidad y eficiencia. En ella se almacenan la copia de los archivos y datos con los que se accede con mayor frecuencia(ya sea en un computador o en un dispositivo movil),
+        como dato curioso, su nombre es de origen frances que significa oculto o escondido, tiene la capacidad de operar de manera mucho mas rapida y eficiente, cada vez que se necesite de los datos almacenados en ella.\cite{academia1}
+        
+        Es importante decir que los datos menos utilizados en la memoria cache seran borrados de ella pero no de la memoria principal
+        ubicada en los computadores entre la memoria RAM y la unidad central de procesamiento (GPU).
+        La memoria cache consta de tres tipos los cuales son:
             
-            -Level 1: Es donde se carga la informacion mas utilizada, ademas funcionando a la misma velocidad de los nucleos.
+            -cache de nivel 1(L1): La memoria interna  esta integrada en el procesador y trabaja a la misma velocidad, y se divide en dos partes(una parte se encarga de almacenar las instrucciones y la otra los datos)
             
-            -Level 2: Se carga la informacion un poco menos utilizada y volviendose mas lenta, pero a su vez tiene mas capacidad de almacenamiento(tambien esta dentro de los nucleos).
+            -cache de nivel 2(L2) : Almacena datos y archivos , ls velocidad de esta cache comprada con la anterior es mucho menor y ademas no tiene divisiones en su estructura
             
-            -Level 3: Aqui se almacena el resto de informacion cacheada,con un promedio de 12 megabytes de memoria.
+            -cache de nivel 3(L3): es mucho mas rapida en cuanto al acceso de datos e instrucciones que no estan en L1 Y L2 , ademas la capacidad de respuesta es mucho mayor a la de la memoria principal sin contar que puede llegar hasta los 12 megabytes de almacenamiento.
         
         \subsubsection{La memoria RAM}
         La memoria RAM es el tipo de memoria mas importante que tiene el computador,en este tipo de memoria se puede acceder desde cualquier espacio , mo importa si dirreccion o la posicion. Las siglas RAM significan ( Random Access Memory o memoria de acceso aleatorio),es un gran componente y a medida que el computadoras tengan mas memoria RAM(Acequible en algunos casos)este no dependera tanto de la memoria virtual.
@@ -106,11 +111,7 @@ tipos de dispositivos, a continuacion mostraremos aspectos muy importantes sobre
         
         \subsubsection{Ordenes finales} Ahora el microprocesador da  un aviso de orden, la pasa a buscar, leer y procesar(lo cual no es mas que quitar tanto el documento como el programa del espacio de memoria en el cual estaban.)
         
-    
-    
-    
-    
-    
+
     \subsection{Qué hace que una memoria sea más rápida que otra y porque esto es importante?}
     Cuando hablamos de rapidez tendemos a igualarla con la velocidad, terminos que parecen ser iguales pero que en realidad tienen ciertas diferenciaciones. Asi mismo la rapidez una memoria podria decirse que se compone de la latencia(eficiencia) y la frecuencia(velocidad).
 
