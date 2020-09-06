@@ -56,13 +56,36 @@ tipos de dispositivos, a continuacion mostraremos aspectos muy importantes sobre
     \label{fig:tipo_memoria}
     \end{figure}
 
-    Por otra parte podriamos decir que el termino de memoria es una taquigrafia(Técnica de escritura en la que se utilizan ciertos signos y abreviaturas especiales para poder transcribir todo lo que dice alguien a la misma velocidad a la que habla.) para la memoria fisica que se refiere a los chips que son capaces de llevar a cabo datos del computador.
+    Por otra parte podriamos decir que el termino de memoria es una taquigrafia(Técnica de escritura en la que se utilizan ciertos signos y abreviaturas especiales para poder transcribir todo lo que dice alguien a la misma velocidad a la que habla.) para la memoria fisica que se refiere a los chips que son capaces de llevar a cabo datos del computador \cite{monografias}.
     
     \subsection{Tipos de memoria}
     En las computadoras hay diferentes tipos de memoria, unas mas rapidaz que otras pero todas iguales de importantes y todas necesarias para el correcto funcionamiento, por ejemplo hoy en dia los microprocesadores cada vez son mas eficientes y veloces, capaces de procesar miles de millones de ciclos por segundo,po ende son capaces de procesar 
-    miles de millones de bytes por segundo, por este motivo deben de tener dispositivos de almacenamiento tempor que puedan seguir el trabajo ya que si no fuera asise tendria que parar para cada informacion que llegue.
+    miles de millones de bytes por segundo, por este motivo deben de tener dispositivos de almacenamiento temporal por que puedan seguir el trabajo ya que si no fuera asi se tendria que parar para cada informacion que llegue.
+    
+        \subsubsection{memoria cache}
+        Un tipo de memoria muy rapida. Que se utiliza cada vez que el microprocesador detecta ciertos datos o segmentos de informacion usada de forma reiterativa, toma una copia de la memoria RAM y la carga en la memoria cache. Para este tipo podemos encontrar tres niveles, los cuales son:
+            
+            -Level 1: Es donde se carga la informacion mas utilizada, ademas funcionando a la misma velocidad de los nucleos.
+            
+            -Level 2: Se carga la informacion un poco menos utilizada y volviendose mas lenta, pero a su vez tiene mas capacidad de almacenamiento(tambien esta dentro de los nucleos).
+            
+            -Level 3: Aqui se almacena el resto de informacion cacheada,con un promedio de 12 megabytes de memoria.
+        
         \subsubsection{La memoria RAM}
-        La memoria RAM es el tipo de memoria mas importante que tiene el computador,en este tipo de memoria se puede acceder desde cualquier espacio , mo importa si dirreccion o la posicion. Las siglas RAM significan ( Random Access Memory o memoria de acceso aleatorio)
+        La memoria RAM es el tipo de memoria mas importante que tiene el computador,en este tipo de memoria se puede acceder desde cualquier espacio , mo importa si dirreccion o la posicion. Las siglas RAM significan ( Random Access Memory o memoria de acceso aleatorio),es un gran componente y a medida que el computadoras tengan mas memoria RAM(Acequible en algunos casos)este no dependera tanto de la memoria virtual.
+        
+        -Tipos de memoria RAM:
+            
+            DRAM(dynamic RAM): Por su traduccion al español RAM dinamica , es un tipo de memoria que envia señales llamadas RAS(señal de direccion de fila)hacia la fila donde se encuentran las celdas cuyo transistores se van a activar y permitir  pasar los electrones hacia los capacitores de las celdas, seguidamente se envian otro tipo de señales llamadas CAS(señales de direccion de columna) las cuales  rellenan con electrones los capacitores de las celdas que representan los bits 1.
+            
+            SRAM (static RAM) : por su traduccion al español RAM estatica, en este "nuevo" tipo de memoria es diferente al tipo DRAM, esta compuesta por cuatro transistores y algunos circuitos, y gracias a esto permite ser mucho mas rapida que la memoria DRAM, aunque al ser mucho mas grande esto hara que tenga menor cantidad de celdas y asi menor capacidad de bits de almacenamiento.
+            
+            SDRAM (Synchronous Dynamic RAM) : la RAM dinamica sincronica,funciona en sincronia con el microprocesador ,lo que significa que espera a la señal de reloj antes de responder,asi aceptando una orden de lectura antes  de haber procesado una orden de escritura(trabajar en paralelo).\cite{hardzone}
+            
+        \subsubsection{La memoria virtual}
+            
+        
+        
     \subsection{¿Como se debe de gestionar una memoria en un computador?}
     \subsection{Qué hace que una memoria sea más rápida que otra y porque esto es importante?}
     
