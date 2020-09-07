@@ -21,6 +21,11 @@
         \vspace{1.5cm}
             
         \textbf{Santiago Pereira Ramirez}
+        
+        
+        \vspace{1 cm}
+        
+        \textbf{Augusto Enrique Salazar Jimenez}
             
         \vfill
             
@@ -70,24 +75,24 @@ y formas de trabajar en equipo,asi como tener la disciplina y el empeño para re
         La memoria cache consta de tres tipos los cuales son:
             
            
-            -cache de nivel 1(L1): La memoria interna  esta integrada en el procesador y trabaja a la misma velocidad, y se divide en dos partes(una parte se encarga de almacenar las instrucciones y la otra los datos)
+            -cache de nivel 1(L1): La memoria interna  esta integrada en el procesador y trabaja a la misma velocidad, y se divide en dos partes(una parte se encarga de almacenar las instrucciones y la otra los datos)\\
             
             
-            -cache de nivel 2(L2) : Almacena datos y archivos , ls velocidad de esta cache comprada con la anterior es mucho menor y ademas no tiene divisiones en su estructura
+            -cache de nivel 2(L2) : Almacena datos y archivos , ls velocidad de esta cache comprada con la anterior es mucho menor y ademas no tiene divisiones en su estructura.\\
             
            
-            -cache de nivel 3(L3): es mucho mas rapida en cuanto al acceso de datos e instrucciones que no estan en L1 Y L2 , ademas la capacidad de respuesta es mucho mayor a la de la memoria principal sin contar que puede llegar hasta los 12 megabytes de almacenamiento.
+            -cache de nivel 3(L3): es mucho mas rapida en cuanto al acceso de datos e instrucciones que no estan en L1 Y L2 , ademas la capacidad de respuesta es mucho mayor a la de la memoria principal sin contar que puede llegar hasta los 12 megabytes de almacenamiento.\\
         
         \subsubsection{La memoria RAM}
         La memoria RAM es el tipo de memoria mas importante que tiene el computador,en este tipo de memoria se puede acceder desde cualquier espacio , mo importa si dirreccion o la posicion. Las siglas RAM significan ( Random Access Memory o memoria de acceso aleatorio por su traduccion del ingles),es un gran componente y a medida que el computadoras tengan mas memoria RAM(Acequible en algunos casos)este no dependera tanto de la memoria virtual.
         
         --Tipos de memoria RAM:
             
-            -DRAM(dynamic RAM): Por su traduccion al español RAM dinamica , es un tipo de memoria que envia señales llamadas RAS(señal de direccion de fila)hacia la fila donde se encuentran las celdas cuyo transistores se van a activar y permitir  pasar los electrones hacia los capacitores de las celdas, seguidamente se envian otro tipo de señales llamadas CAS(señales de direccion de columna) las cuales  rellenan con electrones los capacitores de las celdas que representan los bits 1.
+            -DRAM(dynamic RAM): Por su traduccion al español RAM dinamica , es un tipo de memoria que envia señales llamadas RAS(señal de direccion de fila)hacia la fila donde se encuentran las celdas cuyo transistores se van a activar y permitir  pasar los electrones hacia los capacitores de las celdas, seguidamente se envian otro tipo de señales llamadas CAS(señales de direccion de columna) las cuales  rellenan con electrones los capacitores de las celdas que representan los bits 1.\\
             
-            -SRAM (static RAM) : por su traduccion al español RAM estatica, en este "nuevo" tipo de memoria es diferente al tipo DRAM, esta compuesta por cuatro transistores y algunos circuitos, y gracias a esto permite ser mucho mas rapida que la memoria DRAM, aunque al ser mucho mas grande esto hara que tenga menor cantidad de celdas y asi menor capacidad de bits de almacenamiento.
+            -SRAM (static RAM) : por su traduccion al español RAM estatica, en este "nuevo" tipo de memoria es diferente al tipo DRAM, esta compuesta por cuatro transistores y algunos circuitos, y gracias a esto permite ser mucho mas rapida que la memoria DRAM, aunque al ser mucho mas grande esto hara que tenga menor cantidad de celdas y asi menor capacidad de bits de almacenamiento.\\
             
-            -SDRAM (Synchronous Dynamic RAM) : la RAM dinamica sincronica,funciona en sincronia con el microprocesador ,lo que significa que espera a la señal de reloj antes de responder,asi aceptando una orden de lectura antes  de haber procesado una orden de escritura(trabajar en paralelo).\cite{hardzone}
+            -SDRAM (Synchronous Dynamic RAM) : la RAM dinamica sincronica,funciona en sincronia con el microprocesador ,lo que significa que espera a la señal de reloj antes de responder,asi aceptando una orden de lectura antes  de haber procesado una orden de escritura(trabajar en paralelo).\cite{hardzone}\\
             
             \begin{figure}[h]
             \includegraphics[width=6 cm]{imagenes/ram+hdd+ssd.png}
@@ -129,13 +134,17 @@ y formas de trabajar en equipo,asi como tener la disciplina y el empeño para re
     
     \subsubsection{Latencia} La latencia es el tiempo que transcurre entre una peticion y respuesta,para profundizar mas La latencia CAS mide el número de ciclos de reloj que pasan desde que se realiza una petición para leer un dato hasta que dicha información está disponible.Pero enrealidad el tiempo de latencia no sera el total que se calcule ya que entra algo que influye mucho y que reduce el tiempo en que se hace un ciclo que es la frecuencia.\cite{profesional}
     
-    \subsubsection{Frecuencia} Es la que indica la velocida a la que trabaja la memoria,mas aun el numero de frecuencia indica cuantos datos puede manejar por segundo, entonces mientras mas ciclos sobre segundos mas cantidad de datos se podra almacenar y leer, asi beneficiando al usuario ya que sera todo mas fluido(como ejemplo podemos plantear que una memoria RAM tiene 3200 MHz, por ende esta ejecutará 3.200 millones de ciclos por segundo).\cite{computerhoy}
+    \subsubsection{Frecuencia} Es la que indica la velocida a la que trabaja la memoria,mas aun el numero de frecuencia indica cuantos datos puede manejar por segundo, entonces mientras mas ciclos sobre segundos mas cantidad de datos se podra almacenar y leer, asi beneficiando al usuario ya que sera todo mas fluido(como ejemplo podemos plantear que una memoria RAM tiene 3200 MHz, por ende esta ejecutará 3.200 millones de ciclos por segundo).\cite{computerhoy}\\
     
     dos formulas bastante faciles para calcular el rendimiento  serian: 
     
+    \vspace{0,5 cm}
+    
     (Latencia/Frecuencia) x 2 x 1024
     
-    un ejemplo para esta formula seria: una memoria que tiene 8 de latencia o timing y una frecuencia de 2.133 MHz daria un rendieminto de 9,60 nanosegundos[ (10/2.133) x 2 x 1024= 9,60 ns].
+    \vspace{0,5 cm}
+    
+    un ejemplo para esta formula seria: una memoria que tiene 8 de latencia o timing y una frecuencia de 2.133 MHz daria un rendieminto de 9,60 nanosegundos[ (10/2.133) x 2 x 1024= 9,60 ns].\\
     
     En conclucion una memoria es mas rapida que otra gracias a una adecuada latencia (ya que nos permitira menos esperas en las entrasdas de datos) y una buena frecuencia, importante en todos los casos ya que nos dara eficiencia, fluidez y un desarrollo optimo.
 
